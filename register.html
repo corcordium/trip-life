@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trip Life>注册表单</title>
+	<link rel="stylesheet" href="css/register.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<script>
+		window.onload = function(){
+			var oDiv = document.getElementById('caption');
+			var oSpan = oDiv.getElementsByTagName('span')[0];
+			var aInput = document.getElementsByTagName('input');
+			aInput[0].focus();
+			aInput[2].onclick = function(){
+				if(aInput[0].value == '' && aInput[1].value == ''){
+					oSpan.innerHTML = "请输入用户名，密码";
+					oSpan.style.color = 'red';
+				}else if(aInput[0].value != '' && aInput[1].value == ''){
+					oSpan.innerHTML = "请输入密码";
+					oSpan.style.color = 'red';
+				}else if(aInput[0].value == '' && aInput[1].value != ''){
+					oSpan.innerHTML = "请输入用户名";
+					oSpan.style.color = 'red';
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="register">
+		<h1>Trip Life</h1>
+		<div id="caption">
+			<span>在这个站点注册</span>
+		</div>
+		<div class="register_form">
+			<form action="" method="">
+				<span>用户名</span>
+				<input type="text" name="username">
+				<span>密码</span>
+				<input type="password" name="password" />
+				<input class="submit" type="button" value="注册" name="register" />
+			</form>
+		</div>
+		<div class="footer">
+			<a href="login.html">登录</a> |
+			<a href="index.html">Begin Your Trip Life</a>
+		</div>
+	</div>
+</body>
+</html>

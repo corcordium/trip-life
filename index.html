@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>trip life</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="shortcut icon" href="img/trip life.ico">
+	<script src="./js/downMenu.js"></script>
+	<script>
+		window.onload = function(){
+			var oUl = document.getElementById('pagenavi');
+			var aLi = oUl.getElementsByTagName('li');
+			for(var i=1;i<aLi.length-1;i++){
+				aLi[i].index = i;
+				aLi[i].onclick = function(){
+					for(var j=1;j<aLi.length-1;j++){
+						aLi[j].innerHTML = '<a href="#">'+ j +'</a>';
+						aLi[j].className = 'page-numbers';
+					}
+					this.innerHTML = this.index;
+					aLi[this.index].className = 'page-numbers current';
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="header">
+		<div id="login_register" class="login_register">
+			<a href="login.html">登录</a> |
+			<a href="register.html">注册</a>
+		</div>
+		<h1>Trip Life</h1>
+		<div class="banner">
+			<div class="banner_first">
+				<a href="index.html" ></a>
+			</div>
+			<ul id="banner_container">
+				<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)" class="banner_container_li">
+					<a class="banner_menu_pro" href="#">分类索引</a>
+					<ul>
+						<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+							<a href="">品质生活</a>
+							<ul>
+								<li><a href="#">美好家居</a></li>
+								<li><a href="#">建筑大观</a></li>
+								<li><a href="#">科技数码</a></li>
+							</ul>
+						</li>
+						<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+							<a href="">设计美学</a>
+							<ul style="top:32px">
+								<li><a href="#">工业设计</a></li>
+								<li><a href="#">平面设计</a></li>
+								<li><a href="#">精美包装</a></li>
+								<li><a href="#">创意广告</a></li>
+							</ul>
+						</li>
+						<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+							<a href="">艺术创作</a>
+							<ul style="top:64px">
+								<li><a href="#">艺术作品</a></li>
+								<li><a href="#">视觉影像</a></li>
+							</ul>
+						</li>
+						<li><a href="">奇趣发现</a></li>
+					</ul>
+				</li>
+				<li class="banner_container_li">
+					<a href="#">手气不错</a>
+				</li>
+				<li class="banner_container_li">
+					<a href="#">历史最热</a>
+				</li>
+				<li class="banner_container_li">
+					<a href="#">有一家店</a>
+				</li>
+			</ul>
+			<div class="banner_searcher">
+				<form action="index.html" method="">
+					<input type="text" id="search" class="form_style" name="search" />
+					<input type="submit" id="go" value="" onclick="" />
+				</form>
+			</div>
+		</div>
+	</div>
+	<ul id="hot_img">
+		<li class="hot_img_contain" onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+			<a href="#">
+				<img src="./img/hot_img1.jpeg" alt="" class="hot_img1">
+			</a>
+			<ul>
+				<li>天凉好个秋</li>
+			</ul>
+		</li>
+		<li class="hot_img_contain"  onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+			<a href="#">
+				<img src="./img/hot_img1.jpeg" alt="" class="hot_img1">
+			</a>
+			<ul>
+				<li>天凉好个秋</li>
+			</ul>
+		</li>
+		<li class="hot_img_contain"  onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+			<a href="#">
+				<img src="./img/hot_img1.jpeg" alt="" class="hot_img1">
+			</a>
+			<ul>
+				<li>天凉好个秋</li>
+			</ul>
+		</li>
+		<li class="hot_img_contain"  onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+			<a href="#">
+				<img src="./img/hot_img1.jpeg" alt="" class="hot_img1">
+			</a>
+			<ul>
+				<li>天凉好个秋</li>
+			</ul>
+		</li>
+	</ul>
+	<div id="wrap" class="clear">
+		<div id="left_contain" class="clear">
+			<div id="nav">
+			现在位置：<a href="index.html">首页</a>
+			</div>
+			<ul id="container">
+				<li>
+					<h5>牛奶瓶台灯</h5>
+					<span id="date">2015年06月05号</span>
+					<div class="container_wrap">
+						<a class="container_img">
+							<img src="./img/hot_img1.jpeg" alt="">
+						</a>
+						<p>
+						结合了牛奶桶的提手与牛奶瓶的曼妙曲线， 设计师 Constantin Bolimond 创建了这款名为 MU Pack 的简约台灯。设计沿用了我们所熟悉的各种元素，甚至灯光的开启与关闭也如牛奶瓶一般，是通过拧动盖子的方式来控制。 来源Source：yankodesign
+						</p>
+						<span>
+							<a href="#">MU PACK</a>,
+							<a href="#">产品设计</a>,<a href="">台灯</a>
+						</span>
+						<a href="tagPage.html" class="container_button">阅读全文</a>
+					</div>
+				</li>
+				<li>
+					<h5>牛奶瓶台灯</h5>
+					<span id="date">2015年06月05号</span>
+					<div class="container_wrap">
+						<a class="container_img">
+							<img src="./img/hot_img1.jpeg" alt="">
+						</a>
+						<p>
+						结合了牛奶桶的提手与牛奶瓶的曼妙曲线， 设计师 Constantin Bolimond 创建了这款名为 MU Pack 的简约台灯。设计沿用了我们所熟悉的各种元素，甚至灯光的开启与关闭也如牛奶瓶一般，是通过拧动盖子的方式来控制。 来源Source：yankodesign
+						</p>
+						<span>
+							<a href="#">MU PACK</a>,
+							<a href="#">产品设计</a>,<a href="">台灯</a>
+						</span>
+						<a href="tagPage.html" class="container_button">阅读全文</a>
+					</div>
+				</li>
+				<li>
+					<h5>牛奶瓶台灯</h5>
+					<span id="date">2015年06月05号</span>
+					<div class="container_wrap">
+						<a class="container_img">
+							<img src="./img/hot_img1.jpeg" alt="">
+						</a>
+						<p>
+						结合了牛奶桶的提手与牛奶瓶的曼妙曲线， 设计师 Constantin Bolimond 创建了这款名为 MU Pack 的简约台灯。设计沿用了我们所熟悉的各种元素，甚至灯光的开启与关闭也如牛奶瓶一般，是通过拧动盖子的方式来控制。 来源Source：yankodesign
+						</p>
+						<span>
+							<a href="#">MU PACK</a>,
+							<a href="#">产品设计</a>,<a href="">台灯</a>
+						</span>
+						<a href="tagPage.html" class="container_button">阅读全文</a>
+					</div>
+				</li>
+				<li>
+					<h5>牛奶瓶台灯</h5>
+					<span id="date">2015年06月05号</span>
+					<div class="container_wrap">
+						<a class="container_img">
+							<img src="./img/hot_img1.jpeg" alt="">
+						</a>
+						<p>
+						结合了牛奶桶的提手与牛奶瓶的曼妙曲线， 设计师 Constantin Bolimond 创建了这款名为 MU Pack 的简约台灯。设计沿用了我们所熟悉的各种元素，甚至灯光的开启与关闭也如牛奶瓶一般，是通过拧动盖子的方式来控制。 来源Source：yankodesign
+						</p>
+						<span>
+							<a href="#">MU PACK</a>,
+							<a href="#">产品设计</a>,<a href="">台灯</a>
+						</span>
+						<a href="tagPage.html" class="container_button">阅读全文</a>
+					</div>
+				</li>	
+			</ul>
+			<ul class="pagenavi" id="pagenavi">
+				<li><a href="#">上一页</a></li>
+				<li class="page-numbers current">1</li>
+				<li class="page-numbers"><a href="#">2</a></li>
+				<li class="page-numbers"><a href="#">3</a></li>
+				<li class="page-numbers"><a href="#">4</a></li>
+				<li class="page-numbers"><a href="#">5</a></li>
+				<li><a href="#">下一页</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="sidebar">
+			<div class="sidebar_top">
+				<h3>年度排行</h3>
+				<ul>
+					<li>
+						<a href="">两用投影灯</a>
+						<img src="./img/hot_img1.jpeg" alt="">
+					</li>
+					<li>
+						<a href="">两用投影灯</a>
+						<img src="./img/hot_img1.jpeg" alt="">
+					</li>
+					<li>
+						<a href="">两用投影灯</a>
+						<img src="./img/hot_img1.jpeg" alt="">
+					</li>
+					<li>
+						<a href="">两用投影灯</a>
+						<img src="./img/hot_img1.jpeg" alt="">
+					</li>
+					<li>
+						<a href="">两用投影灯</a>
+						<img src="./img/hot_img1.jpeg" alt="">
+					</li>
+					<li>
+						<a href="">两用投影灯</a>
+						<img src="./img/hot_img1.jpeg" alt="">
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="footer_top">
+			<a href="index.html">返回首页</a>
+			<a class="ad" href="#">广告媒体</a>
+		</div>
+		<div class="footer_middle">
+			<h3>友情链接</h3>
+			<ul>
+				<li><a href="http://www.seefan.cn/">稀饭网</a></li>
+				<li><a href="http://qng.im/">青果</a></li>
+				<li><a href="http://hshsy.taobao.com/">还有一个店</a></li>
+				<li><a href="http://www.hsh.name/">左右设计</a></li>
+				<li><a href="http://www.ydniao.com/">园丁鸟室内设计网</a></li>
+				<li><a href="http://coak.cn/">酷科星球</a></li>
+				<li><a href="http://www.xiankankan.com/">先看看</a></li>
+				<li><a href="http://www.xxlifexx.com/">制品</a></li>
+				<li><a href="http://www.iwucha.com/">爱午茶</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

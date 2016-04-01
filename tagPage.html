@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>trip life</title>
+	<link rel="stylesheet" href="css/tagPage.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="shortcut icon" href="img/trip life.ico">
+	<script src="./js/fontSize.js"></script>
+	<script src="./js/downMenu.js"></script>
+	<script>
+		window.onload = function(){
+			var arr = ["喜欢","已喜欢"];
+			var i = 1;
+			var oA = document.getElementById('like_btn');
+			
+			oA.onclick = function() {
+				this.innerHTML = arr[i%2];
+				i++;
+
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<div id="header">
+		<div id="login_register" class="login_register">
+			<a href="login.html">登录</a> |
+			<a href="register.html">注册</a>
+		</div>
+		<h1>Trip Life</h1>
+		<div class="banner">
+			<div class="banner_first">
+				<a href="index.html" ></a>
+			</div>
+			<ul id="banner_container">
+				<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)" class="banner_container_li">
+					<a class="banner_menu_pro" href="#">分类索引</a>
+					<ul>
+						<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+							<a href="">品质生活</a>
+							<ul>
+								<li><a href="#">美好家居</a></li>
+								<li><a href="#">建筑大观</a></li>
+								<li><a href="#">科技数码</a></li>
+							</ul>
+						</li>
+						<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+							<a href="">设计美学</a>
+							<ul style="top:32px">
+								<li><a href="#">工业设计</a></li>
+								<li><a href="#">平面设计</a></li>
+								<li><a href="#">精美包装</a></li>
+								<li><a href="#">创意广告</a></li>
+							</ul>
+						</li>
+						<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+							<a href="">艺术创作</a>
+							<ul style="top:64px">
+								<li><a href="#">艺术作品</a></li>
+								<li><a href="#">视觉影像</a></li>
+							</ul>
+						</li>
+						<li><a href="">奇趣发现</a></li>
+					</ul>
+				</li>
+				<li class="banner_container_li">
+					<a href="#">手气不错</a>
+				</li>
+				<li class="banner_container_li">
+					<a href="#">历史最热</a>
+				</li>
+				<li class="banner_container_li">
+					<a href="#">有一家店</a>
+				</li>
+			</ul>
+			<div class="banner_searcher">
+				<form action="index.html" method="">
+					<input type="text" id="search" class="form_style" name="search" />
+					<input type="submit" id="go" value="" onclick="" />
+				</form>
+			</div>
+		</div>
+	</div>
+	<ul id="hot_img">
+		<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+			<a href="#">
+				<img src="./img/hot_img1.jpeg" alt="" class="hot_img1">
+			</a>
+			<ul>
+				<li>天凉好个秋</li>
+			</ul>
+		</li>
+		<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+			<a href="#">
+				<img src="./img/hot_img1.jpeg" alt="" class="hot_img1">
+			</a>
+			<ul>
+				<li>天凉好个秋</li>
+			</ul>
+		</li>
+		<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+			<a href="#">
+				<img src="./img/hot_img1.jpeg" alt="" class="hot_img1">
+			</a>
+			<ul>
+				<li>天凉好个秋</li>
+			</ul>
+		</li>
+		<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+			<a href="#">
+				<img src="./img/hot_img1.jpeg" alt="" class="hot_img1">
+			</a>
+			<ul>
+				<li>天凉好个秋</li>
+			</ul>
+		</li>
+	</ul>
+	<div id="wrap" class="clear">
+		<div id="left_contain" class="clear">
+			<div id="nav">
+			现在位置：<a href="index.html">正文</a>
+			</div>
+			<ul id="container">
+				<li class="tagPage_li">
+					<h5>『世界风情』：天凉好个秋</h5>
+					<a href="#" class="page_change">下篇</a>
+					<a href="#" class="page_change">上篇</a>
+					<span id="date">2014年10月26日</span>
+					<span>字号</span>
+					<a href="#" onclick="smallSize()">小</a>
+					<a href="#" onclick="middleSize()">中</a>
+					<a href="#" onclick="bigSize()">大</a>
+					<div class="container_wrap">
+						<p>
+						南方的气候变化相对没那么明显，直到十月方才感觉早晚天气渐凉，中午却仍火热的很，但这仍然揭示着秋天已经到来。在这一个充满着变化的季节里，天气越来越凉、白天越来越短、而叶子也从绿色转变成红、黄、棕等不同颜色，这里精选了12组照片，展现了大自然在秋天前后的美丽换装。
+						</p>
+						<ul>
+							<li>
+								<strong>北威尔士Tu Hwnt I’r Bont茶室</strong>
+								<img src="./img/tagPage_contain1.jpg" alt="">
+								Image credits: g7preston
+								<img src="./img/tagPage_contain1.jpg" alt="">
+								<span>Image credits: unicorn81</span>
+							</li>
+							<li>
+								<strong>北威尔士Tu Hwnt I’r Bont茶室</strong>
+								<img src="./img/tagPage_contain1.jpg" alt="">
+								Image credits: g7preston
+								<img src="./img/tagPage_contain1.jpg" alt="">
+								<span>Image credits: unicorn81</span>
+							</li><li>
+								<strong>北威尔士Tu Hwnt I’r Bont茶室</strong>
+								<img src="./img/tagPage_contain1.jpg" alt="">
+								Image credits: g7preston
+								<img src="./img/tagPage_contain1.jpg" alt="">
+								<span>Image credits: unicorn81</span>
+							</li><li>
+								<strong>北威尔士Tu Hwnt I’r Bont茶室</strong>
+								<img src="./img/tagPage_contain1.jpg" alt="">
+								Image credits: g7preston
+								<img src="./img/tagPage_contain1.jpg" alt="">
+								<span>Image credits: unicorn81</span>
+							</li><li>
+								<strong>北威尔士Tu Hwnt I’r Bont茶室</strong>
+								<img src="./img/tagPage_contain1.jpg" alt="">
+								Image credits: g7preston
+								<img src="./img/tagPage_contain1.jpg" alt="">
+								<span>Image credits: unicorn81</span>
+							</li><li>
+								<strong>北威尔士Tu Hwnt I’r Bont茶室</strong>
+								<img src="./img/tagPage_contain1.jpg" alt="">
+								Image credits: g7preston
+								<img src="./img/tagPage_contain1.jpg" alt="">
+								<span>Image credits: unicorn81</span>
+							</li><li>
+								<strong>北威尔士Tu Hwnt I’r Bont茶室</strong>
+								<img src="./img/tagPage_contain1.jpg" alt="">
+								Image credits: g7preston
+								<img src="./img/tagPage_contain1.jpg" alt="">
+								<span>Image credits: unicorn81</span>
+							</li>
+						</ul>
+				</div>
+				</li>
+				<a href="javascript:;" class="like_btn" id="like_btn">喜欢</a>
+			</ul>
+			
+		</div>
+		
+		<div id="sidebar">
+			<div class="sidebar_top">
+				<h3>年度排行</h3>
+				<ul>
+					<li>
+						<a href="">两用投影灯</a>
+						<img src="./img/hot_img1.jpeg" alt="">
+					</li>
+					<li>
+						<a href="">两用投影灯</a>
+						<img src="./img/hot_img1.jpeg" alt="">
+					</li>
+					<li>
+						<a href="">两用投影灯</a>
+						<img src="./img/hot_img1.jpeg" alt="">
+					</li>
+					<li>
+						<a href="">两用投影灯</a>
+						<img src="./img/hot_img1.jpeg" alt="">
+					</li>
+					<li>
+						<a href="">两用投影灯</a>
+						<img src="./img/hot_img1.jpeg" alt="">
+					</li>
+					<li>
+						<a href="">两用投影灯</a>
+						<img src="./img/hot_img1.jpeg" alt="">
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="footer_top">
+			<a href="index.html">返回首页</a>
+			<a class="ad" href="#">广告媒体</a>
+		</div>
+		<div class="footer_middle">
+			<h3>友情链接</h3>
+			<ul>
+				<li><a href="http://www.seefan.cn/">稀饭网</a></li>
+				<li><a href="http://qng.im/">青果</a></li>
+				<li><a href="http://hshsy.taobao.com/">还有一个店</a></li>
+				<li><a href="http://www.hsh.name/">左右设计</a></li>
+				<li><a href="http://www.ydniao.com/">园丁鸟室内设计网</a></li>
+				<li><a href="http://coak.cn/">酷科星球</a></li>
+				<li><a href="http://www.xiankankan.com/">先看看</a></li>
+				<li><a href="http://www.xxlifexx.com/">制品</a></li>
+				<li><a href="http://www.iwucha.com/">爱午茶</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
